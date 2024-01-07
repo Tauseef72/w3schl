@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML Basic</title>
+    <title>HTML Elements</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -39,7 +39,7 @@
         </div>
       </header>
       <nav>
-        <a href="home.html">Html</a>
+        <a href="index.html">Html</a>
         <a>CSS</a>
         <a>JAVASCRIPT</a>
         <a>Python</a>
@@ -62,7 +62,7 @@
       <div class="section-splitter">
         <aside class="side-bar">
           <h2 class="aside-heading">HTML Tutorial</h2>
-          <a href="home.html">HTML HOME</a>
+          <a href="index.html">HTML HOME</a>
           <a href="introduction.html">HTML Introduction</a>
           <a href="basic.html">HTML Basic</a>
           <a href="elements.html">HTML Elements</a>
@@ -107,47 +107,70 @@
                 <img src="assests/ad one.png" alt="Ad one" />
               </div>
 
-              <h1 class="main-heading">HTML Basic Examples</h1>
+              <h1 class="main-heading">HTML Elements</h1>
               <div class="btn">
                 <button><span><</span>Previous</button>
                 <button>Next></button>
               </div>
               <div class="line"><hr /></div>
               <div style="padding: 30px">
-                <p>In this chapter we will show some basic HTML examples.</p>
-                <br />
-
                 <p>
-                  Don't worry if we use tags you have not learned about yet.
+                  An HTML element is defined by a start tag, some content, and
+                  an end tag.
                 </p>
               </div>
               <div class="line">
                 <hr />
               </div>
               <div class="second-content">
-                <h2 class="easy-heading">HTML Documents</h2>
+                <h2 class="easy-heading">HTML Elements</h2>
                 <p>
-                  All HTML documents must start with a document type
-                  declaration: <span class="closer"><</span
-                  ><spa class="code">!DOCTYPE html</spa
+                  The HTML <strong>element</strong> is everything from the start
+                  tag to the end tag:
+                </p>
+                <h4>
+                  <span class="closer"><</span><spa class="code">tagname</spa
+                  ><span class="closer">></span>Content goes here..<span
+                    class="closer"
+                    ><</span
+                  ><spa class="code">/tagname</spa><span class="closer">></span>
+                </h4>
+                <br />
+                <p>Examples of some HTML elements:</p>
+                <br />
+                <h4>
+                  <span class="closer"><</span><span class="code">h1</span
+                  ><span class="closer">></span> My First Heading
+                  <span class="closer"><</span><span class="code">/h1</span
                   ><span class="closer">></span>
+                </h4>
+                <h4>
+                  <span class="closer"><</span><span class="code">p</span
+                  ><span class="closer">></span> My first paragraph.
+                  <span class="closer"><</span><span class="code">/p</span
+                  ><span class="closer">></span>
+                </h4>
+              </div>
+              <div style="padding: 40px; background-color: #ffffcc">
+                <p style="font-size: 16px">
+                  <strong>Note:</strong> Some HTML elements have no content
+                  (like the <span><</span>br> element). These elements are
+                  called empty elements. Empty elements do not have an end tag!
+                </p>
+              </div>
+              <div class="line">
+                <hr />
+              </div>
+              <div class="second-content">
+                <h2 class="easy-heading">Nested HTML Elements</h2>
+                <p>
+                  HTML elements can be nested (this means that elements can
+                  contain other elements).
                 </p>
                 <br />
-                <p>
-                  The HTML document itself begins with
-                  <span class="closer"><</span><span class="code">html</span
-                  ><span class="closer">></span> and ends with
-                  <span class="closer"><</span><span class="code">html</span
-                  ><span class="closer">></span>
-                </p>
+                <p>All HTML documents consist of nested HTML elements.</p>
                 <br />
-                <p>
-                  The visible part of the HTML document is between
-                  <span class="closer"><</span><span class="code">body</span
-                  ><span class="closer">></span> and
-                  <span class="closer"><</span><span class="code">body</span
-                  ><span class="closer">></span>
-                </p>
+                <p>The following example contains four HTML elements</p>
               </div>
               <div class="example">
                 <h3 class="ex-heading">Example</h3>
@@ -195,138 +218,116 @@
                 </div>
                 <button class="try-btn">Try it Yourself>></button>
               </div>
-              <div class="midle-p">
-                <p>
-                  <strong
-                    >Click on the "Try it Yourself" button to see how it
-                    works.</strong
-                  >
-                </p>
-              </div>
-              <div class="line">
-                <hr />
-              </div>
               <div class="second-content">
-                <h2 class="easy-heading">
-                  The <span><</span>!DOCTYPE > Declaration
-                </h2>
+                <h3>Example Explained</h3>
                 <p>
-                  The <span class="closer"><</span
-                  ><spa class="code">!DOCTYPE html</spa
-                  ><span class="closer">></span> declaration represents the
-                  document type, and helps browsers to display web pages
-                  correctly.
+                  The <span class="closer"><</span><spa class="code">html</spa
+                  ><span class="closer">></span> element is the root element and
+                  it defines the whole HTML document.
                 </p>
                 <br />
 
                 <p>
-                  It must only appear once, at the top of the page (before any
-                  HTML tags).
+                  It has a start tag <span class="closer"><</span
+                  ><spa class="code">html</spa><span class="closer">></span> and
+                  an end tag <span class="closer"><</span
+                  ><spa class="code">/html</spa><span class="closer">></span>.
                 </p>
                 <br />
 
                 <p>
-                  The <span class="closer"><</span
-                  ><spa class="code">!DOCTYPE html</spa
-                  ><span class="closer">></span> declaration is not case
-                  sensitive.
+                  Then, inside the <span class="closer"><</span
+                  ><spa class="code">html</spa
+                  ><span class="closer">></span> element there is a
+                  <span class="closer"><</span><spa class="code">body</spa
+                  ><span class="closer">></span> element:
                 </p>
+              </div>
+              <div class="example">
                 <br />
-
-                <p>
-                  The <span class="closer"><</span
-                  ><spa class="code">!DOCTYPE html</spa
-                  ><span class="closer">></span> declaration for HTML5 is:
-                </p>
+                <div class="coding">
+                  <span class="closer"><</span><span class="code">body</span
+                  ><span class="closer">></span><br />
+                  <br />
+                  <p>
+                    <span class="closer"><</span><span class="code">h1</span
+                    ><span class="closer">></span>This is a Heading<span
+                      class="closer"
+                      ><</span
+                    ><span class="code">/h1</span><span class="closer">></span>
+                  </p>
+                  <p>
+                    <span class="closer"><</span><span class="code">p</span
+                    ><span class="closer">></span>This is a Paragraph<span
+                      class="closer"
+                      ><</span
+                    ><span class="code">/p</span><span class="closer">></span>
+                  </p>
+                  <br />
+                  <span class="closer"><</span><span class="code">/body</span
+                  ><span class="closer">></span><br />
+                </div>
               </div>
               <div class="line"><hr /></div>
               <!-- Html Heading -->
               <div class="second-content">
-                <h2 class="easy-heading">HTML Headings</h2>
+                <h2 class="easy-heading">Never Skip the End Tag</h2>
                 <p>
-                  HTML headings are defined with the
-                  <span class="closer"><</span><spa class="code">h1</spa
-                  ><span class="closer">></span> to <span class="closer"><</span
-                  ><spa class="code">h6</spa><span class="closer">></span> tags.
+                  Some HTML elements will display correctly, even if you forget
+                  the end tag:
                 </p>
                 <br />
-
-                <p>
-                  <span class="closer"><</span><spa class="code">h1</spa
-                  ><span class="closer">></span> defines the most important
-                  heading. <span class="closer"><</span
-                  ><spa class="code">h6</spa
-                  ><span class="closer">></span> defines the least important
-                  heading:
-                </p>
               </div>
-              <div class="line">
-                <hr />
-              </div>
+              <div class="example">
+                <h3 class="ex-heading">Example</h3>
+                <div class="coding">
+                  <span class="closer"><</span><span class="code">html</span
+                  ><span class="closer">></span>
+                  <p>
+                    <span class="closer"><</span><span class="code">body</span
+                    ><span class="closer">></span><br />
+                    <br />
+                  </p>
 
-              <!-- Paragraphs -->
-              <div class="second-content">
-                <h2 class="easy-heading">HTML Paragraphs</h2>
-
-                <br />
-
-                <p>
-                  HTML paragraphs are defined with the
-                  <span class="closer"><</span><spa class="code">p</spa
-                  ><span class="closer">></span> tag:
-                </p>
+                  <p>
+                    <span class="closer"><</span><span class="code">h1</span
+                    ><span class="closer">></span>This is a Heading
+                  </p>
+                  <p>
+                    <span class="closer"><</span><span class="code">p</span
+                    ><span class="closer">></span>This is a Paragraph
+                  </p>
+                  <br />
+                  <span class="closer"><</span><span class="code">/body</span
+                  ><span class="closer">></span><br />
+                  <span class="closer"><</span><span class="code">/html</span
+                  ><span class="closer">></span>
+                </div>
+                <button class="try-btn">Try it Yourself>></button>
               </div>
               <div class="line"><hr /></div>
-              <!-- html Links -->
               <div class="second-content">
-                <h2 class="easy-heading">HTML Links</h2>
+                <h2 class="easy-heading">HTML is Not Case Sensitive</h2>
 
                 <p>
-                  HTML links are defined with the <span class="closer"><</span
-                  ><spa class="code">a</spa><span class="closer">></span> tag:
+                  HTML tags are not case sensitive: <span class="closer"><</span
+                  ><span class="code">P</span
+                  ><span class="closer">></span> means the same as
+                  <span class="closer"><</span><span class="code">p</span
+                  ><span class="closer">></span>.
                 </p>
                 <br />
+
                 <p>
-                  The link's destination is specified in the
-                  <span class="code">href</span> attribute.
+                  The HTML standard does not require lowercase tags, but W3C
+                  <strong>recommends</strong> lowercase in HTML, and
+                  <strong>demands</strong> lowercase for stricter document types
+                  like XHTML.
                 </p>
-                <br />
-                <p>
-                  Attributes are used to provide additional information about
-                  HTML elements.
-                </p>
-                <br />
-                <p>You will learn more about attributes in a later chapter.</p>
               </div>
 
               <div class="line">
                 <hr />
-              </div>
-              <div>
-                <div class="second-content">
-                  <h2 class="easy-heading">How to View HTML Source</h2>
-                  <p>
-                    Have you ever seen a Web page and wondered "Hey! How did
-                    they do that?"
-                  </p>
-                </div>
-                <div class="second-content">
-                  <h3>View HTML Source Code:</h3>
-                  <p>
-                    Click CTRL + U in an HTML page, or right-click on the page
-                    and select "View Page Source". This will open a new tab
-                    containing the HTML source code of the page.
-                  </p>
-                </div>
-                <div class="second-content">
-                  <h3>Inspect an HTML Element:</h3>
-                  <p>
-                    Right-click on an element (or a blank area), and choose
-                    "Inspect" to see what elements are made up of (you will see
-                    both the HTML and the CSS). You can also edit the HTML or
-                    CSS on-the-fly in the Elements or Styles panel that opens.
-                  </p>
-                </div>
               </div>
               <div class="second-content">
                 <h2 class="easy-heading">HTML Exercises</h2>
@@ -334,17 +335,12 @@
               <div class="main-div">
                 <h2 class="easy-heading">Test Yourself With Exercises</h2>
                 <div class="nested">
-                  <h2 class="easy-heading">Exercise</h2>
-                  <p>
-                    HTML elements are surrounded by a specific type of brackets,
-                    which one?
-                  </p>
+                  <h2 class="easy-heading">Exercise:</h2>
+                  <p>Insert the correct end tag for the HTML heading.</p>
                   <div class="nested-div">
                     <p>
-                      <span class="hide">po</span>p
-                      <span class="hide">po</span>This is a paragraph.
-                      <span class="hide">po</span><span>/p</span
-                      ><span class="hide">po</span>
+                      <span><</span>h1> This is a heading.
+                      <span class="hide">popopo</span>
                     </p>
                   </div>
                   <button style="margin-top: 20px">Submit Answer>></button>
@@ -356,7 +352,7 @@
               </div>
               <div class="bton">
                 <button>
-                  <a href="introduction.html"><span><</span>Previous</a>
+                  <a href="basic.html"><span><</span>Previous</a>
                 </button>
                 <button
                   style="
@@ -367,7 +363,7 @@
                 >
                   Log in to track progress
                 </button>
-                <button><a href="elements.html">Next></a></button>
+                <button><a href="attributes.html">Next></a></button>
               </div>
             </section>
             <aside class="advertise">
